@@ -2,12 +2,14 @@
     {
         "name": "Stefan",
         "alter": 21,
-        "kennt_json": true
+        "kennt_json": true,
+        "hobbies": ["laufen", "schwimmen", "tanzen"]
     },
 
     {
         "name": "Steffi",
         "alter": null,
-        "kennt_json": true
+        "kennt_json": true,
+        "hobbies": ["laufen", "schwimmen", "tanzen"]
     }
 ]
