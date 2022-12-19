@@ -5,10 +5,15 @@
         "kennt_json": true,
         "hobbies": ["laufen", "schwimmen", "tanzen"]
     },
-
     {
         "name": "Steffi",
         "alter": null,
+        "kennt_json": true,
+        "hobbies": ["laufen", "schwimmen", "tanzen"]
+    },
+    {
+        "name": "Herbert",
+        "alter": 23,
         "kennt_json": true,
         "hobbies": ["laufen", "schwimmen", "tanzen"]
     }
