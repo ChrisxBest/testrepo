@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+</head>
+<body>
+    <script>// JS-Script aus Laufzeitgründen besser in den Body, nicht in den head!
+    /*src="app.js" Externe Datei einbinden */
+//Variablen zuweisen 
+let name = "Max"; //Variable
+let const PI = 3.14; //Konstante Variable
+
+//Funktionen
+function calculate(number1, number2){
+    console.log(number1+number2);
+
+}
+calculate(5,5); //Funktionsaufruf
+
+//IF-ELSE
+let zahl=100;
+
+if(zahl>150 && zahl <200){ //&&: und, ||: oder
+    console.log("GUT!");
+}
+else if (zahl<=150) {
+console.log("GEHT!");
+}
+else {
+    console.log("BÄH!");
+}
+
+//Objekte (JSON)
+let Max = {
+    groeße: 180,
+    alter: 31,
+    geburtstag: function() {
+        this.alter +=1;
+    }
+};
+Max.geburtstag();
+console.log(Max.alter);
+
+//Arrays (entsprechen einer Liste)
+let obstListe = ["Banane","Apfel","Erdbeere"];
+console.log(obstliste[0]);
+
+//Schleifen
+for(let i=0;i<10; i++){ //1.te Variante
+    console.log(i);
+}
+for(let i in obstliste){ //2.te Variante
+    console.log(obstListe[i]);
+}
+obstListe.forEach(function(value){ //3.te Variante
+
+});
+    </script>
+</body>
+</html>
+
