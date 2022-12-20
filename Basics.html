@@ -11,7 +11,7 @@
     /*src="app.js" Externe Datei einbinden */
 //Variablen zuweisen 
 let name = "Max"; //Variable
-let const PI = 3.14; //Konstante Variable
+const PI = 3.14; //Konstante Variable
 
 //Funktionen
 function calculate(number1, number2){
@@ -46,13 +46,13 @@ console.log(Max.alter);
 
 //Arrays (entsprechen einer Liste)
 let obstListe = ["Banane","Apfel","Erdbeere"];
-console.log(obstliste[0]);
+console.log(obstListe[0]);
 
 //Schleifen
 for(let i=0;i<10; i++){ //1.te Variante
     console.log(i);
 }
-for(let i in obstliste){ //2.te Variante
+for(let i in obstListe){ //2.te Variante
     console.log(obstListe[i]);
 }
 obstListe.forEach(function(value){ //3.te Variante
