@@ -59,8 +59,22 @@ for(let i in obstListe){ //2.te Variante
     console.log(obstListe[i]);
 }
 obstListe.forEach(function(value){ //3.te Variante
-
 });
+
+//Asynchrone Funktionen und Exceptions
+let catFact_api="https://catfact.ninja/fact";
+
+async function load(){
+    try{
+    let response=await fetch(catFact_api);
+    let result=await response.json();
+    console.log(result);
+    } catch(e){
+        console.log("Ein Fehler ist aufgetreten",e);
+    }
+}
+load();
+
 </script>
 </body>
 </html>
