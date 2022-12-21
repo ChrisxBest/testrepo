@@ -7,32 +7,11 @@
     <title>Basics</title>
 </head>
 <body>
-    
-<input type="text" id="input" value=""/> 
-<button id="click-button">klick mich!</button>
-<div id="output"></div>
-
 <script>
 //JS-Script aus Laufzeitgründen besser in den Body, nicht in den head!
 //über die IDs wird über JS auf die Elemente zugegriffen
 //src="app.js" Externe Datei einbinden //
 
-
-let clickButton=document.querySelector("#click-button");
-clickButton.addEventListener("click", eingabe);
-
-function eingabe(){
-    let input=document.querySelector("#input");
-    let output=document.querySelector("#output");
-
-    let newDiv=document.createElement("div");
-    let newContent = document.createTextNode(input.value);
-
-    newDiv.appendChild(newContent);
-    output.appendChild(newDiv);
-
-    input.value="";
-}
 //Variablen zuweisen 
 let name = "Max"; //Variable
 const PI = 3.14; //Konstante Variable
